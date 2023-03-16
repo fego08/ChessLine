@@ -17,7 +17,7 @@ class ChessLine:
 
         if game_start==True:
 
-            self.board.square(is_occupied=True)
+            self.board.square()
             self.board.make_board()
             self.board.visualize_board()
 

@@ -13,42 +13,42 @@ class Pawn(Piece):
     '''A Pawn'''
 
     def __init__(self):
-           super().__init__(self, is_alive=bool, can_promote=True, position=tuple)
+           super().__init__(self)
            self.symbol = 'p'
 
 class Rook(Piece):
     '''A Rook'''
 
     def __init__(self):
-           super().__init__(self, is_alive=bool, can_castle=bool, position=tuple)
+           super().__init__(self)
            self.symbol = 'R'
 
 class Knight(Piece):
     '''A Knight, but how does it move?'''
 
     def __init__(self):
-           super().__init__(self, is_alive=bool, position=tuple)
+           super().__init__(self)
            self.symbol = 'N'
 
 class Bishop(Piece):
     '''A Bishop'''
 
     def __init__(self):
-           super().__init__(self, is_alive=bool, position=tuple)
+           super().__init__(self)
            self.symbol = 'B'
 
 class Queen(Piece):
     '''A Queen'''
 
     def __init__(self):
-           super().__init__(self, is_alive=bool, position=tuple)
+           super().__init__(self)
            self.symbol = 'Q'
 
 class King(Piece):
     '''The King'''
 
     def __init__(self):
-           super().__init__(self, is_alive=bool, in_check=bool, can_castle=bool, position=tuple)
+           super().__init__(self)
            self.symbol = 'K'
 
 
