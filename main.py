@@ -1,19 +1,28 @@
 from board import Board
-from pieces import Piece
-
 
 class ChessLine:
     
     def __init__(self):
         '''Init Class for ChessLine'''
 
-
         self.player = {
             'color':'white',
             'name':'name',
             'time_left':['hours', 'minutes', 'seconds']
         }
-        self.board = Board.board
+        self.board = Board()
+        self.get_board(game_start=True)
+
+    def get_board(self, game_start=False):
+
+        if game_start==True:
+
+            self.board.square(is_occupied=True)
+            self.board.make_board()
+            self.board.visualize_board()
+
+        else:
+            self.board.visualize_board()
 
 
 

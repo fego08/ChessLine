@@ -1,5 +1,9 @@
 # A Command Line Interface for Playing Chess on lichess.org through the Lichess API
 
+## TODO
+
+* Rewrite method to find numbers for the squares so its shorter
+
 ## Requirements
 ### For the Base Game
 
